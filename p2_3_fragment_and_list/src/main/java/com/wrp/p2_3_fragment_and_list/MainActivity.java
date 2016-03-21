@@ -1,17 +1,22 @@
 package com.wrp.p2_3_fragment_and_list;
 
+import android.app.ActionBar;
+import android.app.Fragment;
+import android.app.TimePickerDialog;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TimePicker;
 
 public class MainActivity extends AppCompatActivity {
 
 
     ListView listView;
-
+    ViewPager pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     }
+
 }

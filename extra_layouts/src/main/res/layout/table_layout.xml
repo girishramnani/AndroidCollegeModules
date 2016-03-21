@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+
+    <TableRow >
+        <TextView android:text="Girish Ramnani"
+            android:layout_column="1"
+            android:background="#bf9999"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Girish Ramnani"
+            android:background="#ff0000"/>
+        <TextView android:text="Girish Ramnani"
+            android:background="#ff0000"/>
+    </TableRow>
+
+</TableLayout>

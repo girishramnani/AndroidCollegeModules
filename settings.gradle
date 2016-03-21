@@ -1,1 +1,1 @@
-include ':P1_intent', ':p2_3_fragment_and_list', ':p5_database', ':extra_layouts'
+include ':P1_intent', ':p2_3_fragment_and_list', ':p5_database', ':extra_layouts', ':dialogs', ':p6_content_provider'

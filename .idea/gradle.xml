@@ -11,9 +11,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/P1_intent" />
+            <option value="$PROJECT_DIR$/dialogs" />
             <option value="$PROJECT_DIR$/extra_layouts" />
             <option value="$PROJECT_DIR$/p2_3_fragment_and_list" />
             <option value="$PROJECT_DIR$/p5_database" />
+            <option value="$PROJECT_DIR$/p6_content_provider" />
           </set>
         </option>
       </GradleProjectSettings>
