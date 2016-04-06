@@ -25,7 +25,7 @@ public class PostCreateActivity extends AppCompatActivity implements View.OnClic
         createPostButton = (Button) findViewById(R.id.savePostButton);
         titleEdit = (EditText) findViewById(R.id.titleEdit);
         contentEdit = (EditText) findViewById(R.id.contentEdit);
-        DbHelper = new DatabaseHelper(getApplicationContext());
+        DbHelper = DatabaseHelper.getInstance(getApplicationContext());
 
         createPostButton.setOnClickListener(this);
     }
@@ -34,6 +34,7 @@ public class PostCreateActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
 
         DbHelper.addPost(titleEdit.getText().toString(),contentEdit.getText().toString());
+
         Toast.makeText(PostCreateActivity.this,"added a new Post",Toast.LENGTH_LONG).show();
 
     }

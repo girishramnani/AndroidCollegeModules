@@ -11,6 +11,8 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_NAME = "posts";
+    private static DatabaseHelper mInstance = null;
+    private Context mCxt;
 
     public void addPost(String title,String content){
         SQLiteDatabase db = getWritableDatabase();
@@ -30,14 +32,21 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public DatabaseHelper(Context context){
-        super(context,"postdata",null,1);
+    public static DatabaseHelper getInstance(Context ctx){
+        if(mInstance ==null){
+            mInstance = new DatabaseHelper(ctx);
+        }
+        return mInstance;
+    }
+
+    private DatabaseHelper(Context context){
+        super(context,TABLE_NAME,null,1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL(String.format("create table %s (id int primary key autoincrement ,title varchar(100), content text)",TABLE_NAME));
+        db.execSQL(String.format("create table %s (id int primary key,title varchar(100), content text)",TABLE_NAME));
 
 
     }
