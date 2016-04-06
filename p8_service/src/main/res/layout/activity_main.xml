@@ -7,21 +7,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.wrp.p5_database.MainActivity">
+    tools:context="com.wrp.p8_service.MainActivity">
 
-    <ListView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/AddPostButton"
-        android:layout_margin="5dp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add new post"
-        android:id="@+id/AddPostButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:text="Hello World!" />
 </RelativeLayout>
