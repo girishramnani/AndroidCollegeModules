@@ -25,8 +25,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public Cursor getPosts(){
         SQLiteDatabase db = getReadableDatabase();
-        String query = String.format("SELECT * FROM %s",TABLE_NAME);
-
+        String query = String.format("SELECT id as _id,title,content FROM %s",TABLE_NAME);
         return db.rawQuery(query,null);
 
     }
@@ -38,13 +37,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL(String.format("create table %s (id int primary key,title varchar(100), content text)",TABLE_NAME));
+        db.execSQL(String.format("create table %s (id int primary key autoincrement ,title varchar(100), content text)",TABLE_NAME));
 
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        db.execSQL(String.format("drop table %s",TABLE_NAME));
     }
 }

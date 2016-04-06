@@ -14,8 +14,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".PostCreateActivity"></activity>
+        <activity android:name=".PostCreateActivity">
+
+        </activity>
     </application>
 
 </manifest>

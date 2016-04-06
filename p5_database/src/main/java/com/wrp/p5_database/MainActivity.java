@@ -10,10 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CursorAdapter;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
 
     Button createPostButton ;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-       DatabaseListAdapter dp = new DatabaseListAdapter();
+        DatabaseHelper DbHelper = new DatabaseHelper(getApplicationContext());
+        Cursor postCursor = DbHelper.getPosts();
+       DatabaseListAdapter dp = new DatabaseListAdapter(getApplicationContext(),postCursor,true);
+        listView = (ListView) findViewById(R.id.listView);
+        listView.setAdapter(dp);
 
 }
 
