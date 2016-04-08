@@ -22,10 +22,14 @@ public class LogoutActivity extends AppCompatActivity {
         String data = preferences.getString("login","anon");
 
 
-//        if(data.contentEquals("anon")){
-//            Intent intent = new Intent(this,MainActivity.class);
-//            startActivity(intent);
-//        }
+        if(data.contentEquals("anon")){
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+              finish();
+        }
+        else{
+
+        }
 
 
         button.setOnClickListener(new View.OnClickListener() {
