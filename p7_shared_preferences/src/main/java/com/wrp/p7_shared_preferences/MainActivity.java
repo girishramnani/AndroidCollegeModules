@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        preferences = getPreferences(MODE_PRIVATE);
+        preferences = getSharedPreferences("APPLICATION",MODE_PRIVATE);
 
 
         String data = preferences.getString("login","anon");
 
-        if(data !="anon"){
+        if(! data.contentEquals("anon")){
             Intent intent = new Intent(this,LogoutActivity.class);
             startActivity(intent);
         }
@@ -45,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
 
                 String email = emailEdit.getText().toString();
                 String password = passwordEdit.getText().toString();
-                Toast.makeText(MainActivity.this,password,Toast.LENGTH_SHORT).show();
                 if (password.contentEquals("worker")){
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("login",email);
                     editor.commit();
                     Intent intent = new Intent(MainActivity.this,LogoutActivity.class);
                     startActivity(intent);
+                    finish();
 
                 }
                 else{
