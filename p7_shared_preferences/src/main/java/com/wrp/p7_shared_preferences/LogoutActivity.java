@@ -40,19 +40,20 @@ public class LogoutActivity extends AppCompatActivity {
             startActivity(intent);
               finish();
         }
-        else{
-
-            FileEdit = (EditText) findViewById(R.id.fileEdit);
-            saveButton = (Button) findViewById(R.id.SaveButton);
-
-            String file_data = read_data();
-
-            FileEdit.setText(file_data);
-
-            write_data(FileEdit.getText().toString());
 
 
-        }
+        FileEdit = (EditText) findViewById(R.id.fileEdit);
+        saveButton = (Button) findViewById(R.id.SaveButton);
+
+        String file_data = read_data();
+        FileEdit.setText(file_data);
+
+        saveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                write_data(FileEdit.getText().toString());
+            }
+        });
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +62,7 @@ public class LogoutActivity extends AppCompatActivity {
                 SharedPreferences.Editor p = getSharedPreferences("APPLICATION", MODE_PRIVATE).edit();
                 p.remove("login");
                 p.commit();
-                Intent intent = new Intent(LogoutActivity.this,MainActivity.class);
+                Intent intent = new Intent(LogoutActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
 
