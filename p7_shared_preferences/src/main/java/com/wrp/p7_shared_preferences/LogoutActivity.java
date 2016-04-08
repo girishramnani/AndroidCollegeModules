@@ -32,7 +32,8 @@ public class LogoutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor p = getSharedPreferences("APPLICATION", MODE_PRIVATE).edit();
-                p.clear();
+                p.remove("login");
+                p.commit();
                 Intent intent = new Intent(LogoutActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
