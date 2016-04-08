@@ -72,7 +72,7 @@ public class LogoutActivity extends AppCompatActivity {
     }
 
     void write_data(String data){
-        try (FileOutputStream fileOutputStream = openFileOutput(FILENAME, MODE_APPEND);
+        try (FileOutputStream fileOutputStream = openFileOutput(FILENAME, MODE_PRIVATE);
              BufferedWriter writer = new BufferedWriter(new FileWriter(fileOutputStream.getFD()))
         ){
             writer.write(data);
