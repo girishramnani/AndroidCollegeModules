@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/dialogs/dialogs.iml" filepath="$PROJECT_DIR$/dialogs/dialogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamic_layout_injection/dynamic_layout_injection.iml" filepath="$PROJECT_DIR$/dynamic_layout_injection/dynamic_layout_injection.iml" />
       <module fileurl="file://$PROJECT_DIR$/extra_layouts/extra_layouts.iml" filepath="$PROJECT_DIR$/extra_layouts/extra_layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p10_alarm_clock/p10_alarm_clock.iml" filepath="$PROJECT_DIR$/p10_alarm_clock/p10_alarm_clock.iml" />
       <module fileurl="file://$PROJECT_DIR$/p2_3_fragment_and_list/p2_3_fragment_and_list.iml" filepath="$PROJECT_DIR$/p2_3_fragment_and_list/p2_3_fragment_and_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/p5_database_&amp;_custom_provider/p5_database_&amp;_custom_provider.iml" filepath="$PROJECT_DIR$/p5_database_&amp;_custom_provider/p5_database_&amp;_custom_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/p6_content_provider/p6_content_provider.iml" filepath="$PROJECT_DIR$/p6_content_provider/p6_content_provider.iml" />
