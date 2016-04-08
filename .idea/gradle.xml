@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/p7_shared_preferences_&amp;_file_editor" />
             <option value="$PROJECT_DIR$/p8_service" />
             <option value="$PROJECT_DIR$/recycler_view" />
+            <option value="$PROJECT_DIR$/retrofit_trial" />
           </set>
         </option>
       </GradleProjectSettings>
