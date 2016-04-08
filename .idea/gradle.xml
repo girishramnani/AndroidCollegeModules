@@ -15,9 +15,9 @@
             <option value="$PROJECT_DIR$/dynamic_layout_injection" />
             <option value="$PROJECT_DIR$/extra_layouts" />
             <option value="$PROJECT_DIR$/p2_3_fragment_and_list" />
-            <option value="$PROJECT_DIR$/p5_database" />
+            <option value="$PROJECT_DIR$/p5_database_&amp;_custom_provider" />
             <option value="$PROJECT_DIR$/p6_content_provider" />
-            <option value="$PROJECT_DIR$/p7_shared_preferences" />
+            <option value="$PROJECT_DIR$/p7_shared_preferences_&amp;_file_editor" />
             <option value="$PROJECT_DIR$/p8_service" />
             <option value="$PROJECT_DIR$/recycler_view" />
           </set>

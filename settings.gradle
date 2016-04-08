@@ -1,1 +1,1 @@
-include ':P1_intent', ':p2_3_fragment_and_list', ':p5_database', ':extra_layouts', ':dialogs', ':p6_content_provider', ':recycler_view', ':dynamic_layout_injection', ':p8_service', ':p7_shared_preferences'
+include ':P1_intent', ':p2_3_fragment_and_list', ':p5_database_&_custom_provider', ':extra_layouts', ':dialogs', ':p6_content_provider', ':recycler_view', ':dynamic_layout_injection', ':p8_service', ':p7_shared_preferences_&_file_editor'
