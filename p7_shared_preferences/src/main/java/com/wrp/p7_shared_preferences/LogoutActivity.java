@@ -6,11 +6,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class LogoutActivity extends AppCompatActivity {
 
     Button button;
-
+    static String FILENAME = "SHARED_PREFERENCE";
+    Button saveButton;
+    EditText FileEdit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +41,16 @@ public class LogoutActivity extends AppCompatActivity {
               finish();
         }
         else{
+
+            FileEdit = (EditText) findViewById(R.id.fileEdit);
+            saveButton = (Button) findViewById(R.id.SaveButton);
+
+            String file_data = read_data();
+
+            FileEdit.setText(file_data);
+
+            write_data(FileEdit.getText().toString());
+
 
         }
 
@@ -47,5 +70,45 @@ public class LogoutActivity extends AppCompatActivity {
 
     }
 
+    void write_data(String data){
+        try (FileOutputStream fileOutputStream = openFileOutput(FILENAME, MODE_APPEND);
+             BufferedWriter writer = new BufferedWriter(new FileWriter(fileOutputStream.getFD()))
+        ){
+            writer.write(data);
+            writer.flush();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    String read_data(){
+        try {
+            FileInputStream fileInputStream = openFileInput(FILENAME);
+
+            FileReader fileReader = new FileReader(fileInputStream.getFD());
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String c;
+            StringBuilder builder = new StringBuilder();
+            while((c = bufferedReader.readLine()) != null){
+
+                builder.append(c);
+
+            }
+
+
+            return builder.toString();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+
+    }
 
 }
