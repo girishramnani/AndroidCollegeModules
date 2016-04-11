@@ -25,6 +25,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.endTransaction();
     }
 
+    public void updatePost(int id,String title,String content){
+
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("title",title);
+        contentValues.put("content",content);
+
+        db.update(TABLE_NAME,contentValues,"id=?",new String[]{String.valueOf(id)});
+        
+
+    }
+
     public Cursor getPosts(){
         SQLiteDatabase db = getReadableDatabase();
         String query = String.format("SELECT id as _id,title,content FROM %s",TABLE_NAME);
