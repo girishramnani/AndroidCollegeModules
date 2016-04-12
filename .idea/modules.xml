@@ -9,10 +9,11 @@
       <module fileurl="file://$PROJECT_DIR$/extra_layouts/extra_layouts.iml" filepath="$PROJECT_DIR$/extra_layouts/extra_layouts.iml" />
       <module fileurl="file://$PROJECT_DIR$/p10_alarm_clock/p10_alarm_clock.iml" filepath="$PROJECT_DIR$/p10_alarm_clock/p10_alarm_clock.iml" />
       <module fileurl="file://$PROJECT_DIR$/p2_3_fragment_and_list/p2_3_fragment_and_list.iml" filepath="$PROJECT_DIR$/p2_3_fragment_and_list/p2_3_fragment_and_list.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p5_database_&amp;_custom_provider/p5_database_&amp;_custom_provider.iml" filepath="$PROJECT_DIR$/p5_database_&amp;_custom_provider/p5_database_&amp;_custom_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p5_database/p5_database.iml" filepath="$PROJECT_DIR$/p5_database/p5_database.iml" />
       <module fileurl="file://$PROJECT_DIR$/p6_content_provider/p6_content_provider.iml" filepath="$PROJECT_DIR$/p6_content_provider/p6_content_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/p7_shared_preferences_&amp;_file_editor/p7_shared_preferences_&amp;_file_editor.iml" filepath="$PROJECT_DIR$/p7_shared_preferences_&amp;_file_editor/p7_shared_preferences_&amp;_file_editor.iml" />
       <module fileurl="file://$PROJECT_DIR$/p8_service/p8_service.iml" filepath="$PROJECT_DIR$/p8_service/p8_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p9_custom_content_provider/p9_custom_content_provider.iml" filepath="$PROJECT_DIR$/p9_custom_content_provider/p9_custom_content_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/recycler_view/recycler_view.iml" filepath="$PROJECT_DIR$/recycler_view/recycler_view.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit_trial/retrofit_trial.iml" filepath="$PROJECT_DIR$/retrofit_trial/retrofit_trial.iml" />
     </modules>

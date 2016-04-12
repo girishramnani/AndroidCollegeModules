@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         alarmTimePicker = (TimePicker) findViewById(R.id.timePicker);
         ToggleButton toggleButton = (ToggleButton) findViewById(R.id.alarmToggle);
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-        toggleButton.tog
+//        toggleButton.tog
 
 
 

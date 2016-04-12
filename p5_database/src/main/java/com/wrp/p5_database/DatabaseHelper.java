@@ -33,7 +33,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put("content",content);
 
         db.update(TABLE_NAME,contentValues,"id=?",new String[]{String.valueOf(id)});
-        
+
 
     }
 
