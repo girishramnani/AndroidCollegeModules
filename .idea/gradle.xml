@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/P1_intent" />
+            <option value="$PROJECT_DIR$/camera_&amp;_surface_view" />
             <option value="$PROJECT_DIR$/dialogs" />
             <option value="$PROJECT_DIR$/dynamic_layout_injection" />
             <option value="$PROJECT_DIR$/extra_layouts" />
