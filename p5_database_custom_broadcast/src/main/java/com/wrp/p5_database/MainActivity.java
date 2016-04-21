@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
        postCursor = DbHelper.getPosts();
 
         dp = new DatabaseListAdapter(getApplicationContext(),postCursor,true);

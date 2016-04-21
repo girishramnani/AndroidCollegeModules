@@ -20,7 +20,12 @@
         <receiver
             android:name=".DatabaseReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.wrp.p5_database.DATABASE"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
