@@ -14,11 +14,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".PostCreateActivity">
+        <activity android:name=".PostCreateActivity"></activity>
 
-        </activity>
+        <receiver
+            android:name=".DatabaseReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
     </application>
 
 </manifest>
