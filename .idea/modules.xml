@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidCollegeProjects.iml" filepath="$PROJECT_DIR$/AndroidCollegeProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/P1_intent/P1_intent.iml" filepath="$PROJECT_DIR$/P1_intent/P1_intent.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera_&amp;_surface_view/camera_&amp;_surface_view.iml" filepath="$PROJECT_DIR$/camera_&amp;_surface_view/camera_&amp;_surface_view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/custom_drawables/custom_drawables.iml" filepath="$PROJECT_DIR$/custom_drawables/custom_drawables.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogs/dialogs.iml" filepath="$PROJECT_DIR$/dialogs/dialogs.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamic_layout_injection/dynamic_layout_injection.iml" filepath="$PROJECT_DIR$/dynamic_layout_injection/dynamic_layout_injection.iml" />
       <module fileurl="file://$PROJECT_DIR$/extra_layouts/extra_layouts.iml" filepath="$PROJECT_DIR$/extra_layouts/extra_layouts.iml" />
