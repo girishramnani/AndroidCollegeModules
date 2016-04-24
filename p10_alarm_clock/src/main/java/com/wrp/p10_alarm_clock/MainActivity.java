@@ -2,6 +2,8 @@ package com.wrp.p10_alarm_clock;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.content.Intent;
+import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
              if(toggleButton.isChecked()){
                  Calendar c = Calendar.getInstance();
                  c.setTimeInMillis(System.currentTimeMillis());
-                 c.set(Calendar.HOUR, alarmTimePicker.getHour());
-                 c.set(Calendar.MINUTE,alarmTimePicker.getMinute());
-
-                 c.getTimeInMillis();
+                 c.set(Calendar.HOUR, alarmTimePicker.getCurrentHour());
+                 c.set(Calendar.MINUTE,alarmTimePicker.getCurrentMinute());
+                 Intent x = new Intent(MainActivity.this,AlarmReceiver.class);
+                 pendingIntent = PendingIntent.getActivity(MainActivity.this,0,x,0);
+                 alarmManager.setExact(AlarmManager.RTC_WAKEUP,c.getTimeInMillis(),pendingIntent);
              }
             }
         });
