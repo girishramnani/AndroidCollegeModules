@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/P1_intent" />
+            <option value="$PROJECT_DIR$/broadcast_receiver" />
             <option value="$PROJECT_DIR$/camera_&amp;_surface_view" />
             <option value="$PROJECT_DIR$/custom_drawables" />
             <option value="$PROJECT_DIR$/dialogs" />
@@ -25,6 +26,7 @@
             <option value="$PROJECT_DIR$/p9_custom_content_provider" />
             <option value="$PROJECT_DIR$/recycler_view" />
             <option value="$PROJECT_DIR$/retrofit_trial" />
+            <option value="$PROJECT_DIR$/transition" />
           </set>
         </option>
       </GradleProjectSettings>

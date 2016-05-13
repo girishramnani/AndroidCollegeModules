@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidCollegeProjects.iml" filepath="$PROJECT_DIR$/AndroidCollegeProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/P1_intent/P1_intent.iml" filepath="$PROJECT_DIR$/P1_intent/P1_intent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast_receiver/broadcast_receiver.iml" filepath="$PROJECT_DIR$/broadcast_receiver/broadcast_receiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/camera_&amp;_surface_view/camera_&amp;_surface_view.iml" filepath="$PROJECT_DIR$/camera_&amp;_surface_view/camera_&amp;_surface_view.iml" />
       <module fileurl="file://$PROJECT_DIR$/custom_drawables/custom_drawables.iml" filepath="$PROJECT_DIR$/custom_drawables/custom_drawables.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogs/dialogs.iml" filepath="$PROJECT_DIR$/dialogs/dialogs.iml" />
@@ -18,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/p9_custom_content_provider/p9_custom_content_provider.iml" filepath="$PROJECT_DIR$/p9_custom_content_provider/p9_custom_content_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/recycler_view/recycler_view.iml" filepath="$PROJECT_DIR$/recycler_view/recycler_view.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit_trial/retrofit_trial.iml" filepath="$PROJECT_DIR$/retrofit_trial/retrofit_trial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/transition/transition.iml" filepath="$PROJECT_DIR$/transition/transition.iml" />
     </modules>
   </component>
 </project>

@@ -28,6 +28,11 @@ public class CustomDrawable extends View {
         mDrawable.setBounds(x, y, x + width, y + height);
     }
 
+    @Override
+    public boolean onCheckIsTextEditor() {
+        return super.onCheckIsTextEditor();
+    }
+
     protected void onDraw(Canvas canvas) {
         Paint p = new Paint();
         p.setColor(Color.BLACK);
